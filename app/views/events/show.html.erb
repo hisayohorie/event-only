@@ -4,3 +4,6 @@
 <p>Capactiy: <%= @event.capacity %></p>
 <p>Created: <%= @event.created_at %></p>
 <p>Updated: <%= @event.updated_at %></p>
+<%= link_to 'Back', events_path %>
+<%= link_to 'Delete event', event_path(@event), method: :delete, data:{confirm: 'Are you sure?'} %>
+<%= link_to 'Edit event', edit_event_path(@event) %>
