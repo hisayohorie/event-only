@@ -1,0 +1,7 @@
+<h1><%= location.name %></h1>
+<section class="location">
+  <h3><%= location.name %></h3>
+  <h2>City: <%= location.city %></h2>
+  <p><%= location.description %></p>
+  <%= link_to image_tag(location.image, class: 'location'), location_path(location) %>
+</section>
