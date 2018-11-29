@@ -1,10 +1,13 @@
-class ExampleController < ApplicationController
-  def form
+class JobApplicationsController < ApplicationController
+  def index
+  end
+
+  def new
     @job_application = JobApplication.new
   end
 
   def create
-    @job_application = JobApplication.new(job_applicaton_params)
+    @job_application = JobApplication.new(job_application_params)
     @job_application.save
     redirect_to job_applications_path
   end
